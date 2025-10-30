@@ -1,8 +1,139 @@
-h1 {
-    color: #4ac1f7;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body, h1, h2, h3, p, ul, li, a, button, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
-.mylogo {
-    height: 300px;
-    width: auto;
+body {
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+}
+
+header h1 {
+    color: black;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h2 {
+    color: black;
+    margin-bottom: 25px; /* Added space below "New Post" */
+}
+
+.post p {
+    margin: 5px 0 10px 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button, .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form label {
+    display: inline-block;
+    width: 70px;
+    font-weight: 1000;
+    color: black;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: calc(100% - 90px);
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+form button,
+form input[type="submit"] {
+    margin-left: 70px;
+    padding: 10px 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.main-content img {
+    width: 100px;
+    height: auto;
 }
